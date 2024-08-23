@@ -1,0 +1,25 @@
+.banner__title {
+	font-size: 36px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 46.8px;
+	text-align: left;
+}
+
+.banner__text {
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 22.1px;
+	text-align: left;
+}
+
+.banner__link {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20.8px;
+}
+.banner__link-p {
+	font-size: 17px;
+	font-weight: 800;
+	line-height: 22.1px;
+}
