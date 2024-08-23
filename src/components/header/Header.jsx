@@ -62,7 +62,7 @@ const Header = () => {
 					<div className="flex space-x-[20px]">
 						<p className="top__text items-center">
 							{t("hi")}!{" "}
-							<Link to="/" className="text-blue-600 underline">
+							<Link to="/login" className="text-blue-600 underline">
 								{t("Sign in")}
 							</Link>{" "}
 							{t("or")}{" "}

@@ -72,14 +72,14 @@ const SinglePage = () => {
 						<h2 className="details__title pb-[6px]">
 							<strong>{data.title}</strong> - {data.description}
 						</h2>
-						<div className="details__content grid gap-[10px] items-center justify-center mt-[50px] border-t-[1px] border-[ #C9C9C9 ] pt-[40px] max-w-[900px]">
+						<div className="details__content grid  items-center justify-center mt-[50px] border-t-[1px] border-[ #C9C9C9 ] pt-[40px] max-w-[900px]">
 							<div className="">
 								<div className="details__category flex items-center">
 									<p
 										className="
-									w-[100px] text-right"
+									w-[160px] text-right"
 									>
-										Category:{" "}
+										{t("Category")} :{" "}
 									</p>
 									<div className="p-[2px] min-w-[290px] border-[2px] ml-3 border-[ #C9C9C9] bg-[#EBEBEB] rounded-[4px]">
 										{data.category}
@@ -87,39 +87,39 @@ const SinglePage = () => {
 								</div>
 							</div>
 							<div className="details__category-box ">
-								<div className="">
+								<div className="mt-[30px]">
 									<div className="details__category flex items-center">
 										<p
 											className="
-									w-[100px] text-right"
+									w-[160px] text-right"
 										>
-											Warranty information :{" "}
+											{t("Warranty information")} :{" "}
 										</p>
 										<div className="p-[2px] min-w-[290px] border-[2px] ml-3 border-[ #C9C9C9] bg-[#EBEBEB] rounded-[4px]">
 											{data.warrantyInformation}
 										</div>{" "}
 									</div>
 								</div>
-								<div className="">
+								<div className="mt-[30px]">
 									<div className="details__category flex items-center">
 										<p
 											className="
-									w-[100px] text-right"
+									w-[160px] text-right"
 										>
-											Shipping Information:{" "}
+											{t("Shipping Information")} :{" "}
 										</p>
 										<div className="p-[2px] min-w-[290px] border-[2px] ml-3 border-[ #C9C9C9] bg-[#EBEBEB] rounded-[4px]">
 											{data.shippingInformation}
 										</div>
 									</div>
 								</div>
-								<div className="">
+								<div className="mt-[30px]">
 									<div className="details__category flex items-center">
 										<p
 											className="
-									w-[100px] text-right"
+									w-[160px] text-right"
 										>
-											Return Policy:{" "}
+											{t("Return Policy")} :{" "}
 										</p>
 										<div className="p-[2px] min-w-[290px] border-[2px] ml-3 border-[ #C9C9C9] bg-[#EBEBEB] rounded-[4px]">
 											{data.returnPolicy}
@@ -127,13 +127,13 @@ const SinglePage = () => {
 									</div>
 								</div>
 
-								<div className="">
-									<div className="details__category flex items-center">
+								<div className="mt-[30px]">
+									<div className="details__category flex items-center ">
 										<p
 											className="
-									w-[100px] text-right"
+									w-[160px] text-right"
 										>
-											Brand:{" "}
+											{t("Brand")} :{" "}
 										</p>
 										<div className="p-[2px] min-w-[290px] border-[2px] ml-3 border-[ #C9C9C9] bg-[#EBEBEB] rounded-[4px]">
 											{data.brand}
@@ -144,9 +144,12 @@ const SinglePage = () => {
 								<div className="last mt-[20px]  ml-[20px] p-[30px] ">
 									<p className="last__text">
 										{" "}
-										<span className="text-red-600">Last One</span> /{" "}
 										<span className="text-red-600">
-											{data.minimumOrderQuantity} Sold
+											{" "}
+											{t("Lsat One")}
+										</span> /{" "}
+										<span className="text-red-600">
+											{data.minimumOrderQuantity} {t("Sold")}
 										</span>
 									</p>
 								</div>
@@ -156,9 +159,9 @@ const SinglePage = () => {
 									<div className="details__category flex items-center">
 										<p
 											className="
-									w-[100px] text-right"
+									w-[150px] text-right"
 										>
-											Price :
+											{t("Price")} :
 										</p>
 										<div className="  font-inter text-[22px] font-bold leading-[31.92px] text-left">
 											${data.price}
